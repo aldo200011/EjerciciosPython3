@@ -29,5 +29,6 @@ class Estudiante():
 
     def __str__(self):
         return f'Nombre: {self.__nombre}\n' \
-               f'Correo: {self.__correo}\n' \
-               f'Contraseña: {self.__contrasenia}\n\n'
+               f' Correo: {self.__correo}\n' \
+               f' Contraseña: {self.__contrasenia}\n'
+
