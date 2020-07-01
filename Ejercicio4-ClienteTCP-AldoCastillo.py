@@ -25,9 +25,10 @@ class ClienteTCP():
 
 if __name__ == '__main__':
     ctcp = ClienteTCP()
+    mensaje = 'Mensaje de cliente TCP'
 
     while not ctcp.salir:
-        ctcp.escribirMensaje('Mensaje de cliente TCP')
+        ctcp.escribirMensaje(mensaje)
         ctcp.leerMensaje()
 
     ctcp.cliente.close()
