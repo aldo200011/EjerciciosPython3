@@ -38,11 +38,12 @@ class ServidorTCP():
 
 if __name__ == '__main__':
     stcp = ServidorTCP()
+    mensaje = 'Mensaje recibido!'
 
     while not stcp.salir:
         while True:
             stcp.leerMensaje()
-            stcp.escribirMensaje('Mensaje recibido')
+            stcp.escribirMensaje(mensaje)
 
         print('Conexion cerrada')
         stcp.clienteCon.close()
