@@ -26,7 +26,6 @@ class ServidorTCP():
 
 
     def escribirMensaje(self, mensaje: str):
-        self.__pktCount += 1
         self.clienteCon.send(mensaje.encode())
 
 
